@@ -1,32 +1,32 @@
 <%- include('../partials/header') %>
 <form action="/users/signup" method="post">
     <div>
-        <label for="username">Uživatelské jméno</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username">Uživatelské jméno: </label>
+        <input style="margin-left: 40px;" type="text" id="username" name="username" required>
     </div>
     
     <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">E-mail:</label>
+        <input style="margin-left: 124px;"  type="email" id="email" name="email" required>
     </div>
 
     <div>
-        <label for="password">Heslo</label>
-        <input type="password" id="password" name="password" required>
+        <label for="password">Heslo: </label>
+        <input style="margin-left: 129px;" type="password" id="password" name="password" required>
     </div>
 
     <div>
-        <label for="passwordCheck">Heslo znovu</label>
-        <input type="password" id="passwordCheck" name="passwordCheck" required>
+        <label for="passwordCheck">Potvrzení hesla: </label>
+        <input style="margin-left: 61px;" type="password" id="passwordCheck" name="passwordCheck" required>
     </div>
 
     <div>
-        <input type="checkbox" id="agreement" name="agreement" required>
+        <input style="margin-left: 179px;" type="checkbox" id="agreement" name="agreement" required>
         <label for="agreement">Souhlasím se zpracováním dat</label>
     </div>
 
-    <button type="submit">Registrovat</button>
-    <a href="/users/login">Přihlásit se</a>
+    <button style="margin-left: 179px;" type="submit">Registrovat</button>
+    <p style="text-align: center;">Jste již zaregistrováni?</p><a style="margin-left: 885px; text-decoration: none; color: black;" href="/users/login">Přihlásit se</a>
     <p><%= locals.error || '' %></p>
 </form>
 <%- include('../partials/footer') %>

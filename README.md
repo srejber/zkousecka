@@ -1,1 +1,1 @@
-# zkousecka
+# zkousecka by Michal Šrejber

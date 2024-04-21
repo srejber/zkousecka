@@ -1,8 +1,13 @@
 <%- include('../partials/header') %>
-<p>Přihlášen jako <%= locals.user %></p>
-<h3>Možnosti profilu</h3>
+
+<h2>Možnosti: </h2>
+
+<p style="text-align: center;">Přihlášený uživatel: <%= locals.user %></p>
+
 <ul>
-    <li><a href="/users/logout">Odhlásit</a></li>
-    <li><a href="/users/delete">Smazat účet</a></li>
+    <a style="text-decoration: none; margin-left: 850px; color: black;" href="/users/logout">Odhlásit</a>
+    <a style="text-decoration: none; margin-left: 840px; color: black;" href="/users/delete">Smazat účet</a>
 </ul>
+    
+
 <%- include('../partials/footer') %>

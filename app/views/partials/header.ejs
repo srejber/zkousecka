@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="/">Aplikace</a></h1>
+    <header style="background-color: lightgrey;">
+        <h1><a href="/" style="text-decoration: none; margin-left: 785px;">Template Express</a></h1>
         <nav>
             <ul>
-                <li><a href="/">Domů</a></li>
             </ul>
 
             <ul>
                 <% if (locals.user) { %>
-                    <li><a href="/users/profile">Profil</a></li>
-                    <li><a href="/users/logout">Odhlásit</a></li>
+                    <li><a style="text-decoration: none;" href="/users/profile">Profil</a></li>
+                    <li><a style="text-decoration: none;" href="/users/logout">Odhlásit</a></li>
                 <% } else { %>
-                    <li><a href="/users/login">Přihlásit</a></li>
-                    <li><a href="/users/signup">Registrovat</a></li>
+                    <li><a style="text-decoration: none;" href="/users/login">Přihlásit</a></li>
+                    <li><a style="text-decoration: none;" href="/users/signup">Registrovat</a></li>
                 <% } %>
             </ul>
         </nav>

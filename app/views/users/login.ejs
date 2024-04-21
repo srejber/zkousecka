@@ -1,17 +1,17 @@
 <%- include('../partials/header') %>
 <form action="/users/login" method="post">
     <div>
-        <label for="username">Uživatelské jméno</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username">Uživatelské jméno: </label>
+        <input style="margin-left: 50px;" type="text" id="username" name="username" required>
     </div>
 
     <div>
-        <label for="password">Heslo</label>
-        <input type="password" id="password" name="password" required>
+        <label for="password">Heslo: </label>
+        <input style="margin-left: 139px;" type="password" id="password" name="password" required>
     </div>
     
-    <button type="submit">Přihlásit</button>
-    <a href="/users/signup">Registrovat</a>
+    <button style="margin-left: 189px;" type="submit">Přihlásit</button>
+    <p style="text-align: center;">Nemáte stále uživatelský účet?</p><a style="padding-left: 885px; text-decoration: none; color: black;" href="/users/signup">Registrovat</a>
     <p><%= locals.error || '' %></p>
 </form>
 <%- include('../partials/footer') %>
