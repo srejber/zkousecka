@@ -1,0 +1,10 @@
+<%- include('../partials/header') %>
+<form action="/users/delete" method="post">
+    <div>
+        <label for="password">Heslo</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Smazat účet</button>
+    <p><%= locals.error || '' %></p>
+</form>
+<%- include('../partials/footer') %>

@@ -1,0 +1,8 @@
+<%- include('../partials/header') %>
+<p>Přihlášen jako <%= locals.user %></p>
+<h3>Možnosti profilu</h3>
+<ul>
+    <li><a href="/users/logout">Odhlásit</a></li>
+    <li><a href="/users/delete">Smazat účet</a></li>
+</ul>
+<%- include('../partials/footer') %>

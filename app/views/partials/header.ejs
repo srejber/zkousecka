@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= (locals.title === ``) ? `` : `${locals.title} - ` %>Aplikace</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">Aplikace</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Domů</a></li>
+            </ul>
+
+            <ul>
+                <% if (locals.user) { %>
+                    <li><a href="/users/profile">Profil</a></li>
+                    <li><a href="/users/logout">Odhlásit</a></li>
+                <% } else { %>
+                    <li><a href="/users/login">Přihlásit</a></li>
+                    <li><a href="/users/signup">Registrovat</a></li>
+                <% } %>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <% if (title !== ``) { %>
+            <h2><%= title %></h2>
+        <% } %>
+        
